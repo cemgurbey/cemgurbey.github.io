@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fırat Cem Gürbey — Software Developer</title>
+  <meta name="description" content="Fırat Cem Gürbey, software developer based in Montréal, QC. Backend, Ruby on Rails, React Native, computer vision." />
+  <style>
+    :root {
+      --bg: #0f1113;
+      --surface: #16191d;
+      --text: #e8e9ea;
+      --muted: #9aa0a6;
+      --accent: #428df6;
+      --border: #262b31;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 3.5rem 1.5rem 4rem; }
+    header { margin-bottom: 3rem; }
+    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin-top: 0.25rem; }
+    .links { margin-top: 1rem; display: flex; gap: 1rem; }
+    .links a {
+      color: var(--text); text-decoration: none; font-size: 0.95rem;
+      border: 1px solid var(--border); border-radius: 8px; padding: 0.4rem 0.9rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .links a:hover { border-color: var(--accent); background: var(--surface); }
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--accent); margin-bottom: 1rem;
+    }
+    .job { margin-bottom: 1.75rem; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .job-head h3 { font-size: 1.05rem; font-weight: 600; }
+    .job-head h3 span { color: var(--muted); font-weight: 400; }
+    .date { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+    .role { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
+    ul { padding-left: 1.25rem; color: var(--text); }
+    li { margin-bottom: 0.35rem; font-size: 0.97rem; }
+    li::marker { color: var(--muted); }
+    .project { margin-bottom: 1.5rem; }
+    .project:last-child { margin-bottom: 0; }
+    .project a { color: var(--text); font-weight: 600; font-size: 1.02rem; text-decoration: none; }
+    .project a:hover { color: var(--accent); }
+    .project p { color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }
+    .skills-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+    .skills-grid p { font-size: 0.97rem; }
+    .skills-grid strong { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 0.15rem; }
+    footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 560px) {
+      .job-head { flex-direction: column; gap: 0; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Fırat Cem Gürbey</h1>
+      <p class="subtitle">Software Developer — Montréal, QC</p>
+      <nav class="links">
+        <a href="https://github.com/cemgurbey" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/cemgurbey" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/cemgurbey/resume" rel="noopener">Résumé</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>Software developer based in Montréal, working mostly on backend systems. I build and scale Rails services, design API integrations and concurrency-safe data pipelines, and care about keeping production calm. Recently exploring computer vision and ML — currently training an instance-segmentation model to detect plastic residue on water bodies.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>ARC Group Benefits <span>· Montréal, QC</span></h3>
+          <span class="date">Sept 2023 – Present</span>
+        </div>
+        <p class="role">Software Developer</p>
+        <ul>
+          <li>Built a bidirectional Rails–Asana integration (API + webhooks) that moved operational teams from waterfall-style tracking to agile workflows, automating downstream actions like policy renewals and report generation</li>
+          <li>Designed a concurrency-control mechanism serializing webhook processing around Rails transactions to prevent race conditions</li>
+          <li>Shipped a Rails commission platform with configurable multi-party payout splits, reconciliation logic, and cron-scheduled statement generation, replacing a manual process</li>
+          <li>Acted as engineering escalation point for 80+ production incidents; strengthened SOC 2 and security compliance by closing access-control gaps</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Amazon Music <span>· Montréal, QC</span></h3>
+          <span class="date">June 2023 – Aug 2023</span>
+        </div>
+        <p class="role">Software Development Engineer</p>
+        <ul>
+          <li>Ported Swift/Kotlin screens to React Native, consolidating iOS and Android into a single codebase</li>
+          <li>Built the customer onboarding interface and wired components to GraphQL with loading and error states</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Shopify <span>· Montréal, QC</span></h3>
+          <span class="date">June 2022 – May 2023</span>
+        </div>
+        <p class="role">Backend Developer</p>
+        <ul>
+          <li>Built and scaled custom data (metafields and metaobjects) in Rails for 1st- and 3rd-party apps, migrating endpoints from REST to GraphQL</li>
+          <li>Reduced metaobject create/update latency by 10% through bulk operations; hardened loaders with fallbacks</li>
+          <li>Implemented country-specific currency localization for money metafields in the admin API</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Matrox <span>· Dorval, QC</span></h3>
+          <span class="date">Jan 2022 – Apr 2022</span>
+        </div>
+        <p class="role">Software Designer</p>
+        <ul>
+          <li>Worked on Mura IPX video capture cards on Windows and Linux using C/C++</li>
+          <li>Integrated the SRT protocol into the Vwlib library, cutting stream packet loss to under 1%</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <a href="https://github.com/cemgurbey/plastic-water-segmentation" rel="noopener">Plastic Water Segmentation</a>
+        <p>Machine learning model detecting plastic residue on water bodies with instance segmentation. Synthetic COCO datasets with instance annotations; Mask R-CNN trained on Keras/TensorFlow. (2026 – present)</p>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/cemgurbey/sleep-log-data-analysis" rel="noopener">Sleep Log Analysis Tool</a>
+        <p>Converted McGill's Attention, Behaviour and Sleep Laboratory survey data into SPSS variables with Python, NumPy, and pandas. (2022)</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <p><strong>Languages</strong> Python, C/C++, Ruby, JavaScript</p>
+        <p><strong>Technologies</strong> Rails, React, React Native, Django, SQL, NoSQL, REST, GraphQL, HTML/CSS, Pandas, Linux, Bash, Git, Docker, AWS, Google Cloud, Claude, MCP</p>
+        <p><strong>Spoken</strong> English, French, Turkish</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="job">
+        <div class="job-head">
+          <h3>McGill University <span>· Montréal, QC</span></h3>
+          <span class="date">2017 – 2022</span>
+        </div>
+        <p class="role">B.Sc. Computer Science, Minor in French</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Fırat Cem Gürbey · Built with plain HTML, hosted on GitHub Pages
+    </footer>
+
+  </div>
+</body>
+</html>
