@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fırat Cem Gürbey — Software Developer</title>
-  <meta name="description" content="Fırat Cem Gürbey, software developer based in Montréal, QC. Backend, Ruby on Rails, React Native, computer vision." />
+  <meta name="description" content="Fırat Cem Gürbey, software developer based in Montréal, QC. Backend, Ruby on Rails, computer vision and machine learning." />
   <style>
     :root {
       --bg: #0f1113;
@@ -78,7 +78,7 @@
 
     <section>
       <h2>About</h2>
-      <p>Software developer based in Montréal, working mostly on backend systems. I build and scale Rails services, design API integrations and concurrency-safe data pipelines, and care about keeping production calm. Recently exploring computer vision and ML. I'm currently training an instance-segmentation model to detect plastic residue on water bodies.</p>
+      <p>Software developer based in Montréal, working mostly on backend systems. I build and scale Rails services, design API integrations and concurrency-safe data pipelines, and care about keeping production calm. Recently exploring computer vision and ML — currently training an instance-segmentation model to detect plastic residue on water bodies.</p>
     </section>
 
     <section>
@@ -94,7 +94,7 @@
           <li>Built a bidirectional Rails–Asana integration (API + webhooks) that moved operational teams from waterfall-style tracking to agile workflows, automating downstream actions like policy renewals and report generation</li>
           <li>Designed a concurrency-control mechanism serializing webhook processing around Rails transactions to prevent race conditions</li>
           <li>Shipped a Rails commission platform with configurable multi-party payout splits, reconciliation logic, and cron-scheduled statement generation, replacing a manual process</li>
-          <li>Acted as engineering escalation point for 80+ production incidents; strengthened SOC 2 and security compliance by closing access-control gaps</li>
+          <li>Acted as engineering escalation point for 100+ production incidents; strengthened SOC 2 and security compliance by closing access-control gaps</li>
         </ul>
       </div>
 
@@ -141,20 +141,20 @@
 
       <div class="project">
         <a href="https://github.com/cemgurbey/plastic-water-segmentation" rel="noopener">Plastic Water Segmentation</a>
-        <p>Machine learning model detecting plastic residue on water bodies with instance segmentation. Synthetic COCO datasets with instance annotations; Mask R-CNN trained on Keras/TensorFlow. (2026 – present)</p>
+        <p>Machine learning model detecting plastic residue on water bodies with instance segmentation. Synthetic training images generated with diffusion inpainting, masks refined with SAM 2, and YOLO11 segmentation trained on native polygon labels in PyTorch. (2026 – present)</p>
       </div>
 
       <div class="project">
         <a href="https://github.com/cemgurbey/sleep-log-data-analysis" rel="noopener">Sleep Log Analysis Tool</a>
-        <p>Converted McGill's Attention, Behaviour and Sleep Laboratory survey data into SPSS variables with Python, NumPy, and pandas. (2022)</p>
+        <p>Converted McGill's Attention, Behaviour and Sleep Laboratory survey data into SPSS variables with Python, NumPy, and pandas. Rebuilt as an installable package with CLI commands and a seeded synthetic data generator that runs the pipeline end-to-end. (Nov 2022 – May 2023)</p>
       </div>
     </section>
 
     <section>
       <h2>Skills</h2>
       <div class="skills-grid">
-        <p><strong>Languages</strong> Python, C/C++, Ruby, JavaScript</p>
-        <p><strong>Technologies</strong> Rails, React, React Native, Django, SQL, NoSQL, REST, GraphQL, HTML/CSS, Pandas, Linux, Bash, Git, Docker, AWS, Google Cloud, Claude, MCP</p>
+        <p><strong>Languages</strong> C/C++, JavaScript, Python, Ruby</p>
+        <p><strong>Technologies</strong> AWS, Bash, Django, Docker, Git, Google Cloud, GraphQL, HTML/CSS, Linux, MCP, NoSQL, NumPy, Pandas, PyTorch, Rails, React, REST, SQL</p>
         <p><strong>Spoken</strong> English, French, Turkish</p>
       </div>
     </section>
